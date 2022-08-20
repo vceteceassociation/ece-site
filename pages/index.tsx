@@ -1,7 +1,12 @@
 import type { NextPage } from "next"
+import Navbar from "../components/NavBar"
 
 const Home: NextPage = () => {
-  return <div className="text-3xl text-center underline">ECE Association</div>
+  return (
+    <div className="h-screen w-screen">
+      <Navbar />
+    </div>
+  )
 }
 
 export default Home
