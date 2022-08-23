@@ -1,10 +1,10 @@
 import type { NextPage } from "next"
-import Navbar from "../components/NavBar"
+import NavBar from "../components/NavBar"
 
 const Home: NextPage = () => {
   return (
-    <div className="h-screen w-screen">
-      <Navbar />
+    <div className="flex flex-col">
+      <NavBar />
     </div>
   )
 }
