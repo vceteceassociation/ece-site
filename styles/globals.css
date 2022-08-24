@@ -18,3 +18,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.bg-hero {
+  background-image: url("../public/ECE-Corr.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
