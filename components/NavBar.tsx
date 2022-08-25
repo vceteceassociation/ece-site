@@ -1,47 +1,93 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
+/* eslint-disable jsx-a11y/no-noninteractive-tabindex */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Link from "next/link"
 import Image from "next/image"
 
-const Navbar = () => {
+const NavBar = () => {
   return (
-    <nav className="flex justify-between pt-1 pb-4 lg:gap-[4%] mx-[4%]">
-      <div className="lg:flex lg:justify-start lg:items-center lg:basis-[66%]">
-        <a
-          className="hidden lg:block mr-8"
-          target="_blank"
-          href="http://vcet.ac.in"
-          rel="noopener noreferrer"
-        >
-          <Image height="85" width="240" src="/VCET.svg" alt="vcet-logo" />
-        </a>
-        <Link href="/">
-          <a className="hidden lg:block font-bold mr-8">Home</a>
-        </Link>
-        <Link href="/">
-          <a className="hidden lg:block mr-8"> Announcements </a>
-        </Link>
-        <Link href="/">
-          <a className="hidden lg:block"> Achievements </a>
-        </Link>
+    <div className="ml-[1%] mr-[2%] md:ml-[2%] md:mr-[3%] lg-ml-[3%] lg:mr-[4%]">
+      <div className="navbar items-center bg-base-100">
+        <div className="navbar-start">
+          <div className="dropdown">
+            <label tabIndex={0} className="btn btn-ghost lg:hidden pt-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabIndex={0}
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-200 rounded-box w-52"
+            >
+              <li>
+                <Link href="/">
+                  <a> Announcements </a>
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="http://vcet.ac.in/vcetit/ecefaculty.html#faculty"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Faculty
+                </a>
+              </li>
+              <li>
+                <Link href="/">
+                  <a> Magazine </a>
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <Link href="/">
+            <a className="btn btn-ghost">
+              <Image src="/Asso.svg" width="160" height="60" />
+            </a>
+          </Link>
+        </div>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal pt-3">
+            <li>
+              <Link href="/">
+                <a> Announcements </a>
+              </Link>
+            </li>
+            <li>
+              <a
+                href="http://vcet.ac.in/vcetit/ecefaculty.html#faculty"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Faculty
+              </a>
+            </li>
+            <li>
+              <Link href="/">
+                <a> Magazine </a>
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="navbar-end pt-3">
+          <Link href="/">
+            <a className="btn">Contact Us</a>
+          </Link>
+        </div>
       </div>
-      <div className="lg:flex lg:justify-end lg:items-center lg:basis-[30%]">
-        <Link href="/">
-          <a className="hidden lg:block min-w-fit"> Blog </a>
-        </Link>
-        <Link href="/">
-          <a className="hidden lg:block px-4 min-w-fit ml-8"> Magazine </a>
-        </Link>
-        <Link href="/">
-          <button
-            type="button"
-            className="hover:translate-y-1 py-2 px-4 rounded lg:ml-8 text-white text-center bg-gradient-to-r from-rose-600 to-red-600 font-bold min-w-fit"
-          >
-            <a> Contact Us </a>
-          </button>
-        </Link>
-      </div>
-    </nav>
+    </div>
   )
 }
 
-export default Navbar
+export default NavBar

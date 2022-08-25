@@ -6,8 +6,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Oxygen, sans-serif;
 }
 
 a {
@@ -17,4 +16,14 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.bg-hero {
+  background-image: url("../public/ECE-Corr.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.mono-font {
+  font-family: Oxygen Mono, monospace;
 }
