@@ -8,7 +8,7 @@ const Card = () => {
         <p> We are more than a department in VCET. Learn and Grow with us! </p>
       </div>
       <figure>
-        <Image src="/ECE-Hero.png" width="500" height="300" />
+        <Image src="/ECE-Hero-min.jpeg" width="500" height="300" />
       </figure>
     </div>
   )
