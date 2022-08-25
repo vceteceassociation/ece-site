@@ -6,11 +6,11 @@ import Image from "next/image"
 
 const NavBar = () => {
   return (
-    <div className="mx-[4%]">
+    <div className="ml-[1%] mr-[2%] md:ml-[2%] md:mr-[3%] lg-ml-[3%] lg:mr-[4%]">
       <div className="navbar items-center bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+            <label tabIndex={0} className="btn btn-ghost lg:hidden pt-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -36,9 +36,13 @@ const NavBar = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/">
-                  <a> Achievements </a>
-                </Link>
+                <a
+                  href="http://vcet.ac.in/vcetit/ecefaculty.html#faculty"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Faculty
+                </a>
               </li>
               <li>
                 <Link href="/">
@@ -54,16 +58,20 @@ const NavBar = () => {
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal p-0">
+          <ul className="menu menu-horizontal pt-3">
             <li>
               <Link href="/">
                 <a> Announcements </a>
               </Link>
             </li>
             <li>
-              <Link href="/">
-                <a> Achievements </a>
-              </Link>
+              <a
+                href="http://vcet.ac.in/vcetit/ecefaculty.html#faculty"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Faculty
+              </a>
             </li>
             <li>
               <Link href="/">
@@ -72,7 +80,7 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end pt-3">
           <Link href="/">
             <a className="btn">Contact Us</a>
           </Link>
