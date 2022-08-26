@@ -49,6 +49,11 @@ const NavBar = () => {
                   <a> Magazine </a>
                 </Link>
               </li>
+              <li>
+                <Link href="/">
+                  <a> Contact Us </a>
+                </Link>
+              </li>
             </ul>
           </div>
           <Link href="/">
@@ -80,7 +85,7 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end pt-3">
+        <div className="navbar-end hidden lg:flex pt-3">
           <Link href="/">
             <a className="btn">Contact Us</a>
           </Link>
