@@ -8,7 +8,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       <Head>
         <title>ECE Association</title>
       </Head>
-      <Component {...pageProps} />)
+      <Component {...pageProps} />
     </>
   )
 }
