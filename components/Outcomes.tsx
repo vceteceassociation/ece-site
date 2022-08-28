@@ -1,11 +1,11 @@
-import Mission from "./Mission"
-import Vision from "./Vision"
+import PEOs from "./PEOs"
+import PSOs from "./PSOs"
 
 const Card = () => {
   return (
     <div className="flex flex-col sm:flex-row justify-evenly mb-9 items-center sm:items-start">
-      <Vision />
-      <Mission />
+      <PEOs />
+      <PSOs />
     </div>
   )
 }
