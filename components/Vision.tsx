@@ -1,6 +1,6 @@
 const Vision = () => {
   return (
-    <div className="card w-11/12 sm:w-5/12 bg-base-100 shadow-xl mb-4">
+    <div className="card w-11/12 sm:w-5/12 bg-base-100 shadow-xl mb-9 sm:mb-0">
       <div className="card-body">
         <h2 className="card-title font-head text-center">Our Vision</h2>
         <p>

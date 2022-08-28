@@ -31,9 +31,13 @@ const NavBar = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-200 rounded-box w-52"
             >
               <li>
-                <Link href="/">
-                  <a> Announcements </a>
-                </Link>
+                <a
+                  href="https://drive.google.com/file/d/16wjRDQ0et-wks6oTG0HZMhmuMFFhyRuA/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Announcements
+                </a>
               </li>
               <li>
                 <a
@@ -45,14 +49,16 @@ const NavBar = () => {
                 </a>
               </li>
               <li>
-                <Link href="/">
-                  <a> Magazine </a>
-                </Link>
+                <a
+                  href="https://drive.google.com/file/d/16nYLw1iMKXkH-0JDzcVyzGIi755oeB7j/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Magazine
+                </a>
               </li>
               <li>
-                <Link href="/">
-                  <a> Contact Us </a>
-                </Link>
+                <a href="mailto:admin@vceteceassociation.tech"> Contact Us </a>
               </li>
             </ul>
           </div>
@@ -65,9 +71,13 @@ const NavBar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal pt-3">
             <li>
-              <Link href="/">
-                <a> Announcements </a>
-              </Link>
+              <a
+                href="https://drive.google.com/file/d/16wjRDQ0et-wks6oTG0HZMhmuMFFhyRuA/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Announcements
+              </a>
             </li>
             <li>
               <a
@@ -79,15 +89,21 @@ const NavBar = () => {
               </a>
             </li>
             <li>
-              <Link href="/">
-                <a> Magazine </a>
-              </Link>
+              <a
+                href="https://drive.google.com/file/d/16nYLw1iMKXkH-0JDzcVyzGIi755oeB7j/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Magazine
+              </a>
             </li>
           </ul>
         </div>
         <div className="navbar-end hidden lg:flex pt-3">
           <Link href="/">
-            <a className="btn">Contact Us</a>
+            <a href="mailto:admin@vceteceassociation.tech" className="btn">
+              Contact Us
+            </a>
           </Link>
         </div>
       </div>
